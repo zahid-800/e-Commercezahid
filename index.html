@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fashion world</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- bootstraps -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid pt-5">
+        <div class="container-fluid pb-2 nav-bg fixed-top bg-light">
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="#">Fahion <span>World</span></span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bg-light"></span>
+                </button>
+                <div class="collapse justify-content-center navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav justify-content-center">
+                        <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Authers</a>
+                        <a class="nav-link" href="#">All Products <i class="fa-solid fa-angle-down"></i></a>
+                        <a class="nav-link" href="#">Categories</a>
+                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#">Register</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                        <button type="button" class="btn btn-primary"
+                            onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+                        <div id="id01" class="modal">
+                            <form class="modal-content animate" action="/action_page.php" method="post">
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                        title="Close Modal">&times;</span>
+                                    <img src="./img/download.jpg" alt="Avatar" class="avatar img-fluid">
+                                </div>
+                                <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" class="form-control" placeholder="Enter Username" name="uname"
+                                        required>
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" class="form-control" placeholder="Enter Password" name="psw"
+                                        required>
+                                    <button type="submit" class="login_btn">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                </div>
+                                <div class="container" style="background-color:#f1f1f1">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                        class="cancelbtn">Cancel</button>
+                                    <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- hero_area page start -->
+    <section>
+        <div class="container-fluid  pt5 mt-3">
+            <img src="./img/hero_img.jpg" alt="" class="img-fluid">
+        </div>
+    </section>
+    <!-- hero_area page end -->
+
+    <!-- feature product page start -->
+    <section>
+        <div class="container border-fp pb-5 mt-5 pt-3">
+            <div class="feature_product">
+                <div class="feature_product_heading">
+                    <h1>Features Product</h1>
+                </div>
+                <div class="row g-4 feature_product_responsive">
+                    <!-- fp-1 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-1.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$6 <del>$7</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-2 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-2.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$7 <del>$8</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-3 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-3.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$3 <del>$4</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-4 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-4.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$16 <del>$20</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-5 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-5.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$30 <del>$40</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-6 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-6.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$12 <del>$16</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-7 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-7.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$11 <del>$14</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-8 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-8.jpg" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$13 <del>$14</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- fp-9 -->
+                    <div class="col-md-4 fp_responsive">
+                        <div class="fproductlist">
+                            <a href="">
+                                <div class="feature_productlist">
+                                    <div class="fp_img">
+                                        <img src="./img/fpimg-9.webp" alt="">
+                                    </div>
+                                    <div class="fp_heading">
+                                        <h3>
+                                            Exclusive Denim Jacket For Mans - Denim Jacket - Denim Jacket For Men
+                                        </h3>
+                                    </div>
+                                    <div class="fp_ratings">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="fprice">$23 <del>$40</del> </div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-warning btn-block">Order Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature product page end -->
+
+    <!-- fashion style page start -->
+    <section>
+        <div class="container mt-5 pt-4">
+            <div class="fashion_style">
+                <div class="fashion_style_heading">
+                    <h1>Fashion Gallary</h1>
+                </div>
+                <div class="row g-4 pt-4">
+                    <div class="col-sm-6">
+                        <div class="fstyle_1">
+                            <img src="./img/fs-1.jpg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="fs-categories">
+                            <div class="row fs-categories_responsive g-4">
+                                <div class="col-md-6"><img src="./img/fs-2.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-md-6"><img src="./img/fs-3.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-md-6"><img src="./img/fs-4.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-md-6"><img src="./img/fs-5.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-md-6"><img src="./img/fs-6.jpg" alt="" class="img-fluid"></div>
+                                <div class="col-md-6"><img src="./img/fs-8.jpg" alt="" class="img-fluid"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fashion style page end -->
+
+    <!-- all product page start -->
+    <section>
+        <div class="all_product">
+            <div class="container mt-5 pt-4">
+                <div class="row allpr_seachbar_responsive g-4">
+                    <div class="col-lg-6">
+                        <div class="all_product_heading">
+                            <a href="">
+                                <h1>All Product</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="all_product_search_bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="search" placeholder="Search..">
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 all_product_responsive mt-5 pt-4">
+                    <!-- all pr 1 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_1.webp" alt="">
+                                </div>
+                                <div class="allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Realme 8 Pro Camera Protection Premium Silicone Case Crystal Clear Soft TPU
+                                            Ultra-Thin Transparent Flexible Protective Mobile Phone Back Cover</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 2 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_2.webp" alt="">
+                                </div>
+                                <div class="allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 3 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_3.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 4 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_4.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 5 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_5.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 6 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_6.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 7 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_7.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 8 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_8.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 9 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_9.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 10 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_10.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 11 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_11.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 12 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_12.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 13 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_13.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 14 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_14.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 15 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_15.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 16 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_16.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 17 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_17.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 18 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_18.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 19 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr-19.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 20 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_20.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 21 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr-21.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 22 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_2.webp" alt="">
+                                </div>
+                                <div class="allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 23 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_3.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- all pr 24 -->
+                    <div class="col-md-4 all_pr_list_responsive">
+                        <div class="all_pr_list_item">
+                            <a href="">
+                                <div class="all_pr_it_img">
+                                    <img src="./img/allpr_15.webp" alt="">
+                                </div>
+                                <div class=" allpr_item_heading">
+                                    <div class="all_pr_list_heading pt-4">
+                                        <h3>Black Cotton Premium Quality Full Sleeve T-Shirt for Men</h3>
+                                    </div>
+                                    <div class="all_pr_review">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="all_pr_price">$10 <del>$13</del> <span>- 25% discount</span></div>
+                                    <div class="d-grid">
+                                        <button type="button" class="btn btn-light all_prli_btn btn-block">Order
+                                            Now</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               <div class="all_pr_pagenation mt-5 ">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- all product page end -->
+
+    <!-- footer page start -->
+    <div class="footer">
+        <div class="container-fluid mt-5 pt-5 footer_bg">
+            <div class="row g-2 footer_row_responsive">
+                <div class="col-lg-3 footer_colom_responsive">
+                    <div class="address">
+                        <div class="footer_logo">
+                            <h2>Fashion <span>World</span></h2>
+                        </div>
+                        <h5 class="pt-3 border_logo_footer"> <i class="fa-solid fa-location-crosshairs"></i>
+                            Badarganj,Rangpur,Dhaka</h5>
+                        <h5 class="pt-2"> <i class="fa-solid fa-message"></i> zahidhasan800972@gmail.com</h5>
+                        <h5 class="pt-2"> <i class="fa-solid fa-phone"></i> (+880) 17978 39367</h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer_colom_responsive">
+                    <div class="other_page">
+                        <h3>Other Pages</h3>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Home</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> About</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Service</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Project</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer_colom_responsive"  >
+                    <div class="quick_links">
+                        <h3>Quick Links</h3>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Privacy Policy</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Term Of SERVICE</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Disclaimer</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> Credits</a>
+                        <a href=""><i class="fa-solid fa-chevron-right"></i> FAQ</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 footer_colom_responsive">
+                    <div class="news_letter">
+                        <h3>Newsletter</h3>
+                        <input type="email" name="" id="" placeholder="Your Email Address" class="form-control">
+
+                        <p>Get the latest news & updates</p>
+                        <div class="social_link_footer">
+                            <a href=""><i class="fa-solid fa-face-smile"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy_right">
+                <p>© Copyrights 2024 Zahid All rights reserved.</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+        <script src="./Javascript/main.js"></script>
+</body>
+
+</html>
